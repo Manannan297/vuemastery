@@ -1,0 +1,6 @@
+# Editors
+.idea
+
+# Node.js
+node_modules
+*.log
