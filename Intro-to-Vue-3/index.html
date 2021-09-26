@@ -18,6 +18,7 @@
         <div class="product-container">
           <div class="product-image">
             <img
+                :class="{ 'out-of-stock-img' : !inStock }"
                 :src="image"
                 alt=""
             >
