@@ -26,12 +26,11 @@
           <div class="product-info">
             <h1>{{ title }}</h1>
             <p>{{ description }}</p>
-            <a :href="url">Learn more</a>
+
+            <p>{{ sale }}</p>
 
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
-
-            <p v-if="onSale">On Sale!</p>
 
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
@@ -49,6 +48,8 @@
             <ul>
               <li v-for="(size, index) in sizes" :key="index">{{ size }}</li>
             </ul>
+
+            <a :href="url">Learn more</a>
 
             <button
               class="button"
